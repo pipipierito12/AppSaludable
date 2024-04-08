@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFEB3B">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Título de la actividad -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recetas Preparadas"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Imagen de la receta de pizza -->
+        <ImageView
+            android:id="@+id/imageViewRecipePizza"
+            android:layout_width="261dp"
+            android:layout_height="292dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pizza2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+        <!-- Descripción de la receta de pizza -->
+        <TextView
+            android:id="@+id/textViewDescriptionPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Descripción de la receta de pizza"
+            app:layout_constraintTop_toBottomOf="@id/imageViewRecipePizza"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Detalles adicionales de la receta de pizza -->
+        <TextView
+            android:id="@+id/textViewDetailsPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Tiempo de preparación: 15 minutos\nDificultad: Fácil\nIngredientes: tomate, azucar, queso. \nPasos: \n1. Precalienta el horno a 220°C (425°F).\n2. Extiende la masa para pizza sobre una bandeja para hornear.\n3. Agrega salsa de tomate sobre la masa y espolvorea queso mozzarella rallado sobre la salsa.\n4. Añade tus ingredientes favoritos, como pepperoni, champiñones, etc.\n5. Hornea la pizza durante 12-15 minutos hasta que esté dorada y el queso se derrita.\n6. Finalmente, retira del horno, deja enfriar un poco y ¡disfruta de tu deliciosa pizza casera!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescriptionPizza" />
+
+        <!-- Imagen de la receta de papas con arroz y tomate -->
+        <ImageView
+            android:id="@+id/imageViewRecipePapas"
+            android:layout_width="261dp"
+            android:layout_height="292dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/arroz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDetailsPizza" />
+
+        <!-- Descripción de la receta de papas con arroz y tomate -->
+        <TextView
+            android:id="@+id/textViewDescriptionPapas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Descripción de la receta de papas con arroz y tomate"
+            app:layout_constraintTop_toBottomOf="@id/imageViewRecipePapas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Detalles adicionales de la receta de papas con arroz y tomate -->
+        <TextView
+            android:id="@+id/textViewDetailsPapas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Tiempo de preparación: 30 minutos\nDificultad: Media\nIngredientes: papa, arroz, tomate, cebolla, ajo, aceite de oliva, sal, pimienta.\nPasos: \n1. Lava y pela las papas, luego córtalas en cubos. Cocina el arroz según las instrucciones del paquete.\n2. En una sartén grande, calienta un poco de aceite de oliva a fuego medio. Agrega la cebolla picada y el ajo picado, y cocínalos hasta que estén dorados.\n3. Agrega los cubos de papa a la sartén y cocina hasta que estén dorados y tiernos.\n4. Agrega los tomates picados y cocina por unos minutos más hasta que estén suaves.\n5. Incorpora el arroz cocido a la mezcla de papas y tomates. Mezcla bien y cocina por unos minutos más para que los sabores se mezclen.\n6. Sazona con sal y pimienta al gusto. Sirve caliente y disfruta de esta deliciosa receta de papas con arroz y tomate."
+            app:layout_constraintTop_toBottomOf="@id/textViewDescriptionPapas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

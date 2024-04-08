@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFEB3B">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insumos"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tomate -->
+    <ImageView
+        android:id="@+id/imageViewTomate"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tomate"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextQuantityTomate"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextQuantityTomate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        app:layout_constraintTop_toTopOf="@id/imageViewTomate"
+        app:layout_constraintStart_toEndOf="@id/imageViewTomate"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Pollo -->
+    <ImageView
+        android:id="@+id/imageViewPollo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pollo"
+        app:layout_constraintTop_toBottomOf="@id/imageViewTomate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextQuantityPollo"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextQuantityPollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        app:layout_constraintTop_toTopOf="@id/imageViewPollo"
+        app:layout_constraintStart_toEndOf="@id/imageViewPollo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Arroz -->
+    <ImageView
+        android:id="@+id/imageViewArroz"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/arrozblanco"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPollo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextQuantityArroz"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextQuantityArroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        app:layout_constraintTop_toTopOf="@id/imageViewArroz"
+        app:layout_constraintStart_toEndOf="@id/imageViewArroz"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Papa -->
+    <ImageView
+        android:id="@+id/imageViewPapa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/papas"
+        app:layout_constraintTop_toBottomOf="@id/imageViewArroz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextQuantityPapa"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextQuantityPapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        app:layout_constraintTop_toTopOf="@id/imageViewPapa"
+        app:layout_constraintStart_toEndOf="@id/imageViewPapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="116dp"
+        android:layout_height="71dp"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

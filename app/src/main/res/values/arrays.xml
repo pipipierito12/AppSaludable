@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ingredientes">
+        <item>Tomate</item>
+        <item>Pollo</item>
+        <item>Arroz</item>
+        <item>Papa</item>
+
+    </string-array>
+
+    <string-array name="recetas">
+        <item>Arroz con ensalada de tomate</item>
+        <item>Ensalada de tomate con arroz</item>
+        <item>Arroz con tomate y papa</item>
+        <item>Ensalada de papa con tomate</item>
+        <!-- Agrega más recetas según necesites -->
+    </string-array>
+
+</resources>
+

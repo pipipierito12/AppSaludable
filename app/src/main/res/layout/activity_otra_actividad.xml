@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Selecciona los ingredientes:"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textViewReceta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+        <!-- Primer Spinner -->
+        <Spinner
+            android:id="@+id/ingredientSpinner1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/ingredientes"
+            android:spinnerMode="dropdown" />
+
+        <!-- Segundo Spinner -->
+        <Spinner
+            android:id="@+id/ingredientSpinner2"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:entries="@array/ingredientes"
+            android:spinnerMode="dropdown" />
+
+        <!-- Tercer Spinner -->
+        <Spinner
+            android:id="@+id/ingredientSpinner3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/ingredientes"
+            android:spinnerMode="dropdown" />
+
+        <!-- Cuarto Spinner -->
+        <Spinner
+            android:id="@+id/ingredientSpinner4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/ingredientes"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="generarReceta"
+            android:text="Generar Receta" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="325dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/recetario" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
